@@ -1,0 +1,13 @@
+.app__findus .image-frame {
+  width: 78%;
+}
+
+.app__findus .p__opensans {
+  color: var(--color-grey);
+}
+
+@media screen and (max-width: 1150px) {
+  .app__findus .image-frame {
+    width: 100%;
+  }
+}

@@ -1,0 +1,51 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-crimson);
+  color: var(--color-black);
+  font-family: var(--font-base);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 14px;
+  padding: 0.95rem 1.85rem;
+  border-radius: 1px;
+  border: 1px solid var(--color-crimson);
+  outline: none;
+  cursor: pointer;
+  transition: background 0.4s var(--ease-out), color 0.4s var(--ease-out),
+    border-color 0.4s var(--ease-out), transform 0.4s var(--ease-out);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: transparent;
+  color: var(--color-golden);
+  border-color: var(--color-golden);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--color-golden);
+  border-color: var(--color-golden);
+}
+
+.btn--ghost:hover,
+.btn--ghost:focus-visible {
+  background: var(--color-golden);
+  color: var(--color-black);
+}
+
+.btn--nav {
+  padding: 0.7rem 1.35rem;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 2000px) {
+  .btn {
+    font-size: 22px;
+    padding: 1.15rem 2.2rem;
+  }
+}

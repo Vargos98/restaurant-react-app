@@ -7,12 +7,12 @@ const wines = [
     tags: 'AU | Bottle',
   },
   {
-    title: 'Catena Malbee',
+    title: 'Catena Malbec',
     price: '$59',
-    tags: 'AU | Bottle',
+    tags: 'AR | Bottle',
   },
   {
-    title: 'La Vieillw Rose',
+    title: 'La Vieille Rose',
     price: '$44',
     tags: 'FR | 750 ml',
   },
@@ -30,7 +30,7 @@ const wines = [
 
 const cocktails = [
   {
-    title: 'Aperol Sprtiz',
+    title: 'Aperol Spritz',
     price: '$20',
     tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
   },
@@ -47,36 +47,38 @@ const cocktails = [
   {
     title: 'Old Fashioned',
     price: '$31',
-    tags: 'Bourbon | Brown sugar | Angostura Bitters',
+    tags: 'Bourbon | Brown sugar | Angostura bitters',
   },
   {
     title: 'Negroni',
     price: '$26',
-    tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
+    tags: 'Gin | Sweet vermouth | Campari | Orange garnish',
   },
 ];
 
 const awards = [
   {
     imgUrl: images.award02,
-    title: 'Bib Gourmond',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    title: 'Bib Gourmand',
+    subtitle: 'Refined cooking, without pretension.',
   },
   {
     imgUrl: images.award01,
     title: 'Rising Star',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    subtitle: 'Named among the region’s most promising kitchens.',
   },
   {
     imgUrl: images.award05,
     title: 'AA Hospitality',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    subtitle: 'Service that never announces itself.',
   },
   {
     imgUrl: images.award03,
     title: 'Outstanding Chef',
-    subtitle: 'Lorem ipsum dolor sit amet, consectetur.',
+    subtitle: 'Awarded to El Galiardo for a season of exceptional fire.',
   },
 ];
 
-export default { wines, cocktails, awards };
+const data = { wines, cocktails, awards };
+
+export default data;

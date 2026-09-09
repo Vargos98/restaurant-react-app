@@ -1,0 +1,75 @@
+.app__newsletter {
+  padding: 2.5rem 4rem;
+  border: 1px solid var(--color-gold-line);
+  background: rgba(12, 12, 12, 0.92);
+  width: 100%;
+}
+
+.app__newsletter-heading {
+  text-align: center;
+}
+
+.app__newsletter-heading h1 {
+  font-size: 48px;
+}
+
+.app__newsletter-input {
+  flex-direction: row;
+  margin-top: 2.5rem;
+}
+
+.app__newsletter-input input {
+  width: min(620px, 100%);
+  border: 1px solid var(--color-golden);
+  border-radius: 1px;
+  font-size: 1rem;
+  font-family: var(--font-alt);
+  color: var(--color-white);
+  margin-right: 1.25rem;
+  padding: 0.9rem 1.15rem;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app__newsletter-input input:focus {
+  border-color: var(--color-crimson);
+  box-shadow: 0 0 0 1px var(--color-gold-dim);
+}
+
+.app__newsletter-input button {
+  width: max-content;
+}
+
+.app__newsletter-success {
+  color: var(--color-golden);
+  margin-top: 1.25rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__newsletter-input input {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .app__newsletter-input {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .app__newsletter-input input {
+    margin: 0 0 1.25rem 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__newsletter {
+    padding: 2rem 1.25rem;
+  }
+
+  .app__newsletter-heading h1 {
+    font-size: 36px;
+  }
+}

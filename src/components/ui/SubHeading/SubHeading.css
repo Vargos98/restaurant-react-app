@@ -1,0 +1,15 @@
+.subheading {
+  margin-bottom: 1rem;
+}
+
+.subheading p {
+  color: var(--color-golden);
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.subheading img {
+  margin-top: 0.45rem;
+}

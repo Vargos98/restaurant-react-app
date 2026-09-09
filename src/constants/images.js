@@ -21,7 +21,7 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import Logo2 from '../assets/Logo2.png';
 
-export default {
+const images = {
   bg,
   chef,
   V,
@@ -45,3 +45,5 @@ export default {
   quote,
   Logo2,
 };
+
+export default images;

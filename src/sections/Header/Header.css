@@ -1,0 +1,55 @@
+.app__header {
+  background-color: var(--color-black);
+  padding-top: calc(var(--nav-height) + 2rem);
+}
+
+.app__header-h1 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 0.95;
+  font-size: clamp(52px, 8vw, 90px);
+  margin-top: 0.35rem;
+}
+
+.app__header-h1 .line {
+  display: block;
+  overflow: hidden;
+}
+
+.app__header-h1 .line span {
+  display: block;
+}
+
+.app__header-copy {
+  max-width: 420px;
+  color: var(--color-grey);
+}
+
+.app__header .image-frame {
+  width: 78%;
+}
+
+@media screen and (min-width: 2000px) {
+  .app__header-h1 {
+    font-size: 160px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .app__header {
+    text-align: left;
+  }
+
+  .app__header .image-frame {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .app__header-h1 {
+    font-size: 46px;
+  }
+}
