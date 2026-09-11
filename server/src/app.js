@@ -30,6 +30,20 @@ export const createApp = () => {
   app.use(express.json());
   app.use(cookieParser());
 
+  app.get('/', (req, res) => {
+    res.json({
+      name: 'Fiesta La Blanc API',
+      ok: true,
+      docs: {
+        health: '/api/health',
+        menu: '/api/menu',
+        reservations: 'POST /api/reservations',
+        newsletter: 'POST /api/newsletter',
+      },
+      site: process.env.CLIENT_ORIGIN || null,
+    });
+  });
+
   app.get('/api/health', (req, res) => {
     res.json({ ok: true });
   });
