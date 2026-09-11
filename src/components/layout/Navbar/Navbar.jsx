@@ -159,7 +159,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div className="app__navbar-login">
-        <Button href="#contact" variant="ghost" className="btn--nav">
+        <Button href="#reserve" variant="ghost" className="btn--nav">
           Book Table
         </Button>
       </div>
@@ -194,10 +194,10 @@ const Navbar = () => {
               ))}
               <li>
                 <a
-                  href="#contact"
+                  href="#reserve"
                   onClick={(e) => {
                     e.preventDefault();
-                    goTo('#contact');
+                    goTo('#reserve');
                   }}
                 >
                   Book Table

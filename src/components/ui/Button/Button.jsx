@@ -9,6 +9,7 @@ const Button = ({
   variant = 'solid',
   type = 'button',
   onClick,
+  disabled = false,
 }) => {
   const classes = ['btn', variant === 'ghost' ? 'btn--ghost' : '', className]
     .filter(Boolean)
@@ -31,7 +32,7 @@ const Button = ({
   }
 
   return (
-    <button type={type} className={classes} onClick={handleClick}>
+    <button type={type} className={classes} onClick={handleClick} disabled={disabled}>
       {children}
     </button>
   );

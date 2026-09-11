@@ -46,6 +46,12 @@
   margin-top: 1.25rem;
 }
 
+.app__newsletter-error {
+  color: #e8b4b4;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 @media screen and (min-width: 2000px) {
   .app__newsletter-input input {
     font-size: 1.5rem;

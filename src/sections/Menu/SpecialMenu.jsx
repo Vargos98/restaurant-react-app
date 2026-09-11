@@ -1,6 +1,7 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import { SubHeading, MenuItem, Button } from '../../components/ui';
-import { images, data } from '../../constants';
+import { images } from '../../constants';
+import { useMenu } from '../../hooks/useMenu';
 import { gsap } from '../../lib/gsap/gsapSetup';
 import { useReveal } from '../../lib/gsap/useReveal';
 import { useAppReady } from '../../app/AppContext';
@@ -9,6 +10,7 @@ import './SpecialMenu.css';
 const SpecialMenu = () => {
   const ref = useRef(null);
   const { ready, reducedMotion } = useAppReady();
+  const { wines, cocktails } = useMenu();
   useReveal(ref, ready);
 
   useLayoutEffect(() => {
@@ -46,8 +48,8 @@ const SpecialMenu = () => {
         <div className="app__specialMenu-menu_wine flex__center" data-reveal="left">
           <p className="app__specialMenu-menu_heading">Wine & Beer</p>
           <div className="app__specialMenu-menu_items" data-reveal-stagger>
-            {data.wines.map((wine, index) => (
-              <MenuItem key={wine.title + index} title={wine.title} price={wine.price} tags={wine.tags} />
+            {wines.map((wine, index) => (
+              <MenuItem key={wine.id || wine.title + index} title={wine.title} price={wine.price} tags={wine.tags} />
             ))}
           </div>
         </div>
@@ -57,9 +59,9 @@ const SpecialMenu = () => {
         <div className="app__specialMenu-menu_cocktails flex__center" data-reveal="right">
           <p className="app__specialMenu-menu_heading">Cocktails</p>
           <div className="app__specialMenu-menu_items" data-reveal-stagger>
-            {data.cocktails.map((cocktail, index) => (
+            {cocktails.map((cocktail, index) => (
               <MenuItem
-                key={cocktail.title + index}
+                key={cocktail.id || cocktail.title + index}
                 title={cocktail.title}
                 price={cocktail.price}
                 tags={cocktail.tags}
