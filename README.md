@@ -59,7 +59,11 @@ email:    admin@fiestalablanc.com
 password: admin1234
 ```
 
-Those values live in `server/.env`. The password is **hashed** before it is stored. Never store the plain password in the database.
+Production admin is the same URL and password:
+
+`https://restaurant-react-app-rust.vercel.app/admin`
+
+Those values live in `server/.env` locally and in Render env vars in production. The password is **hashed** before it is stored. Never store the plain password in the database.
 
 ---
 
